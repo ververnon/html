@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+        class Laptop
+        {
+            constructor(brand, model, size, color, SSD)
+            {
+                this.laptopbrand = brand;
+                this.laptopmodel = model;
+                this.laptopsize = size;
+                this.laptopcolor = color;
+                this.laptopSSD = SSD;
+            }
+            myLaptop()
+            {
+                return "I have a " + this.laptopcolor + " " + this.laptopbrand + " " + this.laptopmodel + " that is " + this.laptopsize + " inches and has " + this.laptopSSD + "GB of storage.";
+            }
+        }
+        laptop1 = new Laptop("HP", "Spectre 360", 13, "silver", 256);
+        document.getElementById("demo").innerHTML = laptop1.myLaptop();
+        class Phone
+        {
+            constructor(brand, model, color, storage, size)
+            {
+                this.phonebrand = brand;
+                this.phonemodel = model;
+                this.phonecolor = color;
+                this.phonestorage = storage;
+                this.phonesize = size;
+            }
+        }
+        class Shirt
+        {
+            constructor(brand, color, material, sleeve, size)
+            {
+                this.shirtbrand = brand;
+                this.shirtcolor = color;
+                this.shirtmaterial = material;
+                this.shirtsleeve = sleeve;
+                this.shirtsize = size;
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
